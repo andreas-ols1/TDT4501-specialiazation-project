@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Docker/Valhalla
+custom_files/elevation_data/  # If large
+*.log
+*.pbf  # Exclude large OSM files; explain download in README
+
+# Misc
+.DS_Store
+*.html  # Generated maps

@@ -1,0 +1,3 @@
+[submodule "TrajSimiMeasures"]
+	path = TrajSimiMeasures
+	url = https://github.com/changyanchuan/TrajSimiMeasures
