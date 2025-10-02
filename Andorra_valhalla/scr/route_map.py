@@ -52,5 +52,5 @@ for lat, lon in route_coords:
     folium.CircleMarker([lat, lon], radius=3, color="blue", fill=True, fill_color="blue").add_to(m)
 
 # Save map to HTML
-m.save("route_map.html")
-print("Route map saved as route_map.html")
+m.save("../data/route_map.html")
+print("Route map saved as ../data/route_map.html")

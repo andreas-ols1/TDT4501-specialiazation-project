@@ -25,5 +25,5 @@ m = folium.Map(location=[center_lat, center_lon], zoom_start=13)
 folium.Marker([center_lat, center_lon], popup="Center", icon=folium.Icon(color="green")).add_to(m)
 folium.Polygon(polygon, color="red", fill=True, fill_opacity=0.4).add_to(m)
 
-m.save("isochrone_map.html")
-print("Isochrone map saved as isochrone_map.html")
+m.save("../data/isochrone_map.html")
+print("Isochrone map saved as ../data/isochrone_map.html")

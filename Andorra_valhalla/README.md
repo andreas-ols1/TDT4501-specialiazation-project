@@ -23,11 +23,14 @@ This folder contains a module for generating and analyzing pedestrian trajectori
 
 2. **Set Up Valhalla Docker**:
 - Ensure `custom_files/valhalla.json` is present and updated (e.g., paths).
+- Ensure `custom_files/andorra-latest.osm.pbf` is present (downloaded as per Prerequisites).
 - Run Valhalla Docker from the root:
-- docker run -dt --name valhalla_andorra -p 8002:8002 
-- v "$(pwd)/Andorra_valhalla/custom_files:/custom_files"
-- ghcr.io/gis-ops/valhalla:latest 
-- valhalla_run_map -c /custom_files/valhalla.json
+- docker run -dt --name valhalla_andorra -p 8002:8002 -v "$(Get-Location)\Andorra_valhalla\custom_files:/custom_files" ghcr.io/nilsnolde/docker-valhalla/valhalla:latest
+
+- On Linux/Mac (Bash):
+- docker run -dt --name valhalla_andorra -p 8002:8002 -v "$(pwd)/Andorra_valhalla/custom_files:/custom_files" ghcr.io/nilsnolde/docker-valhalla/valhalla:latest
+
+- The container will build routing tiles from the .pbf file (may take 1-5 minutes) and start the service.
 - Verify: `curl http://localhost:8002/status` should respond.
 
 3. **Install Python Dependencies**:
