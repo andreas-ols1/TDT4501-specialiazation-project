@@ -1,1 +1,9 @@
-data
+pycache/
+*.pyc
+.tar.gz
+venv/
+tsmini_env/
+data/.csv
+*.ipynb_checkpoints/
+*.pt
+*.png
