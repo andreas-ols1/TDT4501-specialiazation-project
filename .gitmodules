@@ -1,3 +1,6 @@
 [submodule "TrajSimiMeasures"]
 	path = TrajSimiMeasures
 	url = https://github.com/changyanchuan/TrajSimiMeasures
+[submodule "TSMini"]
+	path = TSMini
+	url = git@github.com:changyanchuan/TSMini.git
